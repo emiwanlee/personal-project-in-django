@@ -1,0 +1,790 @@
+<!Doctype html>
+{% load static %}
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b274edf26f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{%  static "bootstrap/css/bootstrap.rtl.min.css" %}">
+    <script src="https://kit.fontawesome.com/b274edf26f.js" crossorigin="anonymous"></script>
+	
+</head>
+<title>Punters- League Home </title>
+</head>
+<body>
+<!--The Navbar Starts here-->
+
+<div class="nav">
+<ul class="nav_ul">
+<li><a href="/"><i class="fa-solid fa-house"></i>Home</a> </li>
+<li><i class="fa-solid fa-blog"></i>Blog </li>
+<li>Results
+<div class="dropdown_content"> 
+<ul class="nav nav-tabs">
+<li class="active"><a>England</a></li>
+<li><a href="#">Spain</a></li>
+<li><a href="#">Germany</a> </li>
+<li><a href="#">Italy</a></li>
+<li><a href="#">France</a></li>
+<li><a href="#">Belgium</a></li>
+<li><a href="#">Netherlands</a></li>
+<li><a href="#">Portugal</a></li>
+<li><a href="#">Scotland</a></li>
+<li><a href="#">Greece</a></li>
+<li><a href="#">Argentina</a></li>
+<li><a href="#">Brazil</a></li>
+<li><a href="#">Australia</a></li>
+</ul>
+</div>
+</li>
+<li>England
+<div class="dropdown_content">
+<ul>
+<li><a href="premiership.html">Premiership</a></li>
+<li><a href="championship.html">Championship</a></li>
+<li><a href="league_one.html">League One</a> </li>
+<li><a href="league_two.html">League Two</a></li>
+</ul>
+</div>
+
+</li>
+<li>Spain
+<div class="dropdown_content">
+<ul>
+<li><a href="spanish_la_liga.html">La Liga1</a></li>
+<li><a href="spanish_la_liga_2.html">La liga2</a></li>
+</ul>
+</div> 
+</li>
+<li>Italy
+<div class="dropdown_content">
+<ul>
+<li><a href="Italian_serie_a.html">Serie A</a></li>
+<li><a href="Italian_serie_b.html">Serie B</a></li>
+</ul>
+</div>
+ </li>
+<li>Germany 
+<div class="dropdown_content">
+<ul>
+<li><a href="german_bundesliga.html">Bundesliga 1</a></li>
+<li><a href="german_bundesliga_2.html">Bundesliga 2</a></li>
+</ul>
+</div>
+</li>
+<li>France
+<div class="dropdown_content">
+<ul>
+<li><a href="french_ligue_1.html">Ligue 1</a></li>
+<li><a href="french_ligue_2.html">Ligue 2</a></li>
+
+</ul>
+</div>
+ </li>
+<li>Belgium
+<div class="dropdown_content">
+<ul>
+<li><a href="belgian_pro_league.html">Pro League</a></li>
+<li><a href="belgian_tweede_afdeling.html">Tweede Afdeling</a></li>
+</ul>
+</div>
+ </li>
+<li>Netherlands 
+<div class="dropdown_content">
+<ul>
+<li><a href="netherlands_eredevisie.html">Eredevisie</a></li>
+<li><a href="netherlands_erste_divisie.html">Erste Divisie</a></li>
+</ul>
+</div>
+</li>
+<li>Portugal
+<div class="dropdown_content">
+<ul>
+<li><a href="portuguese_premeira_liga.html">Premeira Liga</a></li>
+<li><a href="liga_portugal_2.html">Liga Portugal 2</a></li>
+</ul>
+</div>
+<li>Scotland
+<div class="dropdown_content">
+<ul>
+<li><a href="scottish_premier-league.html">Premiership</a></li>
+<li><a href="scottish_championship.html">Championship</a></li>
+</ul>
+</div>
+<li>Greece
+<div class="dropdown_content">
+<ul>
+<li><a href="greek_super_league.html">Super League</a></li>
+<li><a href="greek_super_league_2a.html">Super League 2A</a></li>
+<li><a href="greek_super_league_2b.html">Super league 2B</a> </li>
+</ul>
+</div>
+<li>Argentina
+<div class="dropdown_content">
+<ul>
+<li><a href="argentina_premera_division.html">Primera Division</a></li>
+<li><a href="argentina_premera_nacional.html">Primera Nacional</a></li>
+</ul>
+</div>
+<li>Brazil
+<div class="dropdown_content">
+<ul>
+<li><a href="brazil_serie_a.html">Serie A</a></li>
+<li><a href="brazil_serie_b.html">Serie B</a></li>
+</ul>
+</div>
+<li>Australia
+<div class="dropdown_content">
+<ul>
+<li><a href="queensland_premier_league.html">Queensland Premier League</a></li>
+<li><a href="npl_victoria.html">NPL Victoria</a></li>
+<li><a href="nsw.html">NSW</a></li>
+
+</ul>
+</div>
+</li>
+
+
+</ul>
+<!--Registration and signin buttons-->
+
+</div>
+</div>
+<div class="container-fluid">
+<p id="demo1"></p>
+<div class="container">
+
+
+
+
+<div class='league container-sm'>
+<div class="date_p">
+<p class="date">Saturday 19<sup>th</sup>October 2024</p>
+</div>
+
+<div class="teams">
+<p class="teams_p">Tottenham - West Ham</p>
+<p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+<div class='odds_div'>
+<p class="odds">2.68 3.18  3.85 28% 30% 43%</p>
+</div>
+<div class='tips'>
+<p class="tips_par"> Tips 1X</p>
+</div>
+<div class="hidden_div">
+<span class="hidden_par" id ="tot-wr"></span>
+<span class="hidden_par" id ="tot-dr"></span>
+<span class="hidden_par" id ="tot-lr"></span> 
+<span>-</span>
+
+<span class="hidden_par" id ="wes-wr"></span>
+<span class="hidden_par" id ="wes-dr"></span>
+<span class="hidden_par" id ="wes-lr"></span>
+
+</div>
+
+<hr>
+</div>
+</div>
+
+<div class='league container-sm'>
+<div class="date_p">
+    <p class="date"></p>
+</div>
+<div class="teams">
+<p class="teams_p">Ipswich - Everton</p>
+<p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+<div class='odds_div'>
+<p class="odds">2.24 3.98  2.91 28% 30% 43%</p>
+</div>
+<div class='tips'>
+<p class="tips_par"> Tips X</p>
+</div>
+<div class="hidden_div">
+    <span class="hidden_par" id ="ips-wr"></span>
+    <span class="hidden_par" id ="ips-dr"></span>
+    <span class="hidden_par" id ="ips-lr"></span> 
+    <span>-</span>
+    
+    <span class="hidden_par" id ="eve-wr"></span>
+    <span class="hidden_par" id ="eve-dr"></span>
+    <span class="hidden_par" id ="eve-lr"></span>
+
+</div>
+
+<hr>
+</div>
+</div>
+<div class='league container-sm'>
+<div class="date_p">
+<p class="date"></p>
+</div>
+<div class="teams">
+<p class="teams_p">Manchester United - Brentford</p>
+<p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+<div class='odds_div'>
+<p class="odds">3.45 3.98  2.25 28% 30% 43%</p>
+</div>
+<div class='tips'>
+<p class="tips_par"> Tips 1</p>
+</div>
+<div class="hidden_div">
+    <span class="hidden_par" id ="mnu-wr"></span>
+    <span class="hidden_par" id ="mnu-dr"></span>
+    <span class="hidden_par" id ="mnu-lr"></span> 
+    <span>-</span>
+    
+    <span class="hidden_par" id ="bre-wr"></span>
+    <span class="hidden_par" id ="bre-dr"></span>
+    <span class="hidden_par" id ="bre-lr"></span>
+</div>
+
+<hr>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+
+
+
+
+<div class='league container-sm'>
+<div class="date_p">
+<p class="date"></p>
+</div>
+
+<div class="teams">
+<p class="teams_p">Fulham - Aston Villa</p>
+<p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+<div class='odds_div'>
+<p class="odds">2.61 3.12  2.63 28% 30% 43%</p>
+</div>
+<div class='tips'>
+<p class="tips_par"> Tips X2</p>
+</div>
+<div class="hidden_div">
+    <span class="hidden_par" id ="ful-wr"></span>
+    <span class="hidden_par" id ="ful-dr"></span>
+    <span class="hidden_par" id ="ful-lr"></span> 
+    <span>-</span>
+    
+    <span class="hidden_par" id ="ast-wr"></span>
+    <span class="hidden_par" id ="ast-dr"></span>
+    <span class="hidden_par" id ="ast-lr"></span>
+</div>
+
+<hr>
+</div>
+</div>
+
+<div class='league container-sm'>
+<div class="date_p">
+<p class="date"></p>
+
+</div>
+<div class="teams">
+<p class="teams_p">Newcastle - Brighton</p>
+<p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+<div class='odds_div'>
+<p class="odds">2.09 3.78  3.99 28% 30% 43%</p>
+</div>
+<div class='tips'>
+<p class="tips_par"> Tips X</p>
+</div>
+<div class="hidden_div">
+    <span class="hidden_par" id ="new-wr"></span>
+    <span class="hidden_par" id ="new-dr"></span>
+    <span class="hidden_par" id ="new-lr"></span> 
+    <span>-</span>
+    
+    <span class="hidden_par" id ="bri-wr"></span>
+    <span class="hidden_par" id ="bri-dr"></span>
+    <span class="hidden_par" id ="bri-lr"></span>
+
+</div>
+
+<hr>
+</div>
+</div>
+
+<div class='league container-sm'>
+    <div class="date_p">
+    <p class="date"></p>
+    
+    </div>
+    <div class="teams">
+    <p class="teams_p">Southampton - Leicester</p>
+    <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+    <div class='odds_div'>
+    <p class="odds">2.09 3.78  3.99 28% 30% 43%</p>
+    </div>
+    <div class='tips'>
+    <p class="tips_par"> Tips X</p>
+    </div>
+    <div class="hidden_div">
+        <span class="hidden_par" id ="sou-wr"></span>
+        <span class="hidden_par" id ="sou-dr"></span>
+        <span class="hidden_par" id ="sou-lr"></span> 
+        <span>-</span>
+        
+        <span class="hidden_par" id ="lei-wr"></span>
+        <span class="hidden_par" id ="lei-dr"></span>
+        <span class="hidden_par" id ="lei-lr"></span>
+    
+    </div>
+    
+    <hr>
+    </div>
+    </div>
+    </div>
+    <div class="container">
+
+
+
+
+        <div class='league container-sm'>
+        <div class="date_p">
+           <p class="date"></p>
+        </div>
+
+
+        
+        
+        <div class="teams">
+        <p class="teams_p">Bournemouth - Arsenal</p>
+        <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+        <div class='odds_div'>
+        <p class="odds">2.61 3.12  2.63 28% 30% 43%</p>
+        </div>
+        <div class='tips'>
+        <p class="tips_par"> Tips 2</p>
+        </div>
+        <div class="hidden_div">
+            <span class="hidden_par" id ="bou-wr"></span>
+            <span class="hidden_par" id ="bou-dr"></span>
+            <span class="hidden_par" id ="bou-lr"></span> 
+            <span>-</span>
+            
+            <span class="hidden_par" id ="ars-wr"></span>
+            <span class="hidden_par" id ="ars-dr"></span>
+            <span class="hidden_par" id ="ars-lr"></span>
+        </div>
+        
+        <hr>
+        </div>
+        </div>
+        
+        <div class='league container-sm'>
+        <div class="date_p">
+            <p class="date">Sunday 20<sup>th</sup>September 2024</p>
+        
+        </div>
+        <div class="teams">
+        <p class="teams_p">Wolves Manchester City</p>
+        <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+        <div class='odds_div'>
+        <p class="odds">2.09 3.78  3.99 28% 30% 43%</p>
+        </div>
+        <div class='tips'>
+        <p class="tips_par"> Tips X2</p>
+        </div>
+        <div class="hidden_div">
+            <span class="hidden_par" id ="wol-wr"></span>
+            <span class="hidden_par" id ="wol-dr"></span>
+            <span class="hidden_par" id ="wol-lr"></span> 
+            <span>-</span>
+            
+            <span class="hidden_par" id ="mnc-wr"></span>
+            <span class="hidden_par" id ="mnc-dr"></span>
+            <span class="hidden_par" id ="mnc-lr"></span>
+        
+        </div>
+        
+        <hr>
+        </div>
+        </div>
+        
+        <div class='league container-sm'>
+            <div class="date_p">
+                   <p class="date"></p>
+            
+            </div>
+            <div class="teams">
+            <p class="teams_p">Liverpool - Chelsea</p>
+            <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+            <div class='odds_div'>
+            <p class="odds">2.09 3.78  3.99 28% 30% 43%</p>
+            </div>
+            <div class='tips'>
+            <p class="tips_par"> Tips 1X</p>
+            </div>
+            <div class="hidden_div">
+                <span class="hidden_par" id ="liv-wr"></span>
+                <span class="hidden_par" id ="liv-dr"></span>
+                <span class="hidden_par" id ="liv-lr"></span> 
+                <span>-</span>
+                
+                <span class="hidden_par" id ="che-wr"></span>
+                <span class="hidden_par" id ="che-dr"></span>
+                <span class="hidden_par" id ="che-lr"></span>
+            
+            </div>
+            
+            <hr>
+            </div>
+            </div>
+            </div>
+        
+
+    <div class="container">
+
+
+
+
+        <div class='league container-sm'>
+        <div class="date_p">
+		<p class="date">Monday 21<sup>st</sup>September 2024</p>
+        
+        
+        </div>
+        
+        <div class="teams">
+        <p class="teams_p">Nottingham - Crystal Palace</p>
+        <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+        <div class='odds_div'>
+        <p class="odds">2.61 3.12  2.63 28% 30% 43%</p>
+        </div>
+        <div class='tips'>
+        <p class="tips_par"> Tips X</p>
+        </div>
+        <div class="hidden_div">
+            <span class="hidden_par" id ="not-wr"></span>
+            <span class="hidden_par" id ="not-dr"></span>
+            <span class="hidden_par" id ="not-lr"></span> 
+            <span>-</span>
+            
+            <span class="hidden_par" id ="cry-wr"></span>
+            <span class="hidden_par" id ="cry-dr"></span>
+            <span class="hidden_par" id ="cry-lr"></span>
+        </div>
+        
+        <hr>
+        </div>
+        </div>
+
+        
+        
+        
+        <div class='league container-sm'>
+        <div class="date_p">
+        <p class="date">Tuesday 14<sup>th</sup>May 2024</p>
+        
+        </div>
+        <div class="teams">
+        <p class="teams_p">Tottenham - Manchester City</p>
+        <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+        <div class='odds_div'>
+        <p class="odds">2.09 3.78  3.99 28% 30% 43%</p>
+        </div>
+        <div class='tips'>
+        <p class="tips_par"> Tips 1</p>
+        </div>
+        <div class="hidden_div">
+            <span class="hidden_par" id ="tot-wr"></span>
+            <span class="hidden_par" id ="tot-dr"></span>
+            <span class="hidden_par" id ="tot-lr"></span> 
+            <span>-</span>
+            
+            <span class="hidden_par" id ="mnc-wr"></span>
+            <span class="hidden_par" id ="mnc-dr"></span>
+            <span class="hidden_par" id ="mnc-lr"></span>
+        
+        </div>
+        
+        <hr>
+        </div>
+        </div>
+        
+        <div class='league container-sm'>
+            <div class="date_p">
+            <p class="date"></p>
+            
+            </div>
+            <div class="teams">
+            <p class="teams_p">Brighton - Arsenal</p>
+            <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+            <div class='odds_div'>
+            <p class="odds">2.09 3.78  3.99 28% 30% 43%</p>
+            </div>
+            <div class='tips'>
+            <p class="tips_par"> Tips 2</p>
+            </div>
+            <div class="hidden_div">
+                <span class="hidden_par" id="bri-wr"></span>
+                <span class="hidden_par" id ="bri-dr"></span>
+                <span class="hidden_par" id ="bri-lr"></span> 
+                <span>-</span>
+                
+                <span class="hidden_par" id ="ars-wr"></span>
+                <span class="hidden_par" id ="ars-dr"></span>
+                <span class="hidden_par" id ="ars-lr"></span>
+            
+            </div>
+            
+            <hr>
+            </div>
+            </div>
+    </div> 
+
+
+
+          
+<!----
+<div class='league'>
+<div class="date_p">
+<p class="date">Sunday 7 <sup>th</sup>Apr. 2023</p>
+</div>
+
+<div class="teams">
+<p class="teams_p">Manchester United - Liverpool</p>
+<p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+<div class='odds_div'>
+<p class="odds">1.91 3.68  4.37 28% 30% 43%</p>
+</div>
+<div class='tips'>
+<p class="tips_par"> Tips 1X</p>
+</div>
+<div class="hidden_div">
+<p class="hidden_par">This is the first meeting Between these guys this year.
+This promises to be a spectacular match</p>
+
+</div>
+
+<hr>
+</div>
+</div>
+</div>
+
+<div class="container">
+
+
+
+
+<div class='league'>
+<div class="date_p">
+<p class="date"></p>
+</div>
+
+<div class="teams">
+<p class="teams_p">Brentford - Nottingham</p>
+<p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+<div class='odds_div'>
+<p class="odds">3.65 3.98  2.21 28% 30% 43%</p>
+</div>
+<div class='tips'>
+<p class="tips_par"> Tips X</p>
+</div>
+<div class="hidden_div">
+<p class="hidden_par">Manchester City has been in a spectacular form lately</p>
+
+</div>
+
+<hr>
+</div>
+</div>
+
+<div class='league'>
+<div class="date_p">
+<p class="date"></p>
+</div>
+<div class="teams">
+<p class="teams_p">West Ham - Nottingham</p>
+<p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+<div class='odds_div'>
+<p class="odds">2.99 3.98  2.01 28% 30% 43%</p>
+</div>
+<div class='tips'>
+<p class="tips_par"> Tips X2</p>
+</div>
+<div class="hidden_div">
+<p class="hidden_par">This is the first meeting Between these guys this year.
+This promises to be a spectacular match</p>
+
+</div>
+
+<hr>
+</div>
+</div>
+<div class='league'>
+<div class="date_p">
+
+</div>
+
+<div class="teams">
+<p class="teams_p">Liverpool - Brentford</p>
+<p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+<div class='odds_div'>
+<p class="odds">2.99 3.98  2.21 28% 30% 43%</p>
+</div>
+<div class='tips'>
+<p class="tips_par"> Tips X2</p>
+</div>
+<div class="hidden_div">
+<p class="hidden_par">This is the first meeting Between these guys this year.
+This promises to be a spectacular match</p>
+
+</div>
+
+<hr>
+</div>
+</div>
+</div>
+
+<div class="container">
+
+
+
+
+<div class='league'>
+<div class="date_p">
+<p class="date"></p>
+</div>
+
+<div class="teams">
+<p class="teams_p">Chelsea - Manchester City</p>
+<p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+<div class='odds_div'>
+<p class="odds">1.70 3.98  4.21 28% 30% 43%</p>
+</div>
+<div class='tips'>
+<p class="tips_par"> Tips 1X</p>
+</div>
+<div class="hidden_div">
+<p class="hidden_par">Manchester City has been in a spectacular form lately</p>
+
+</div>
+
+<hr>
+</div>
+</div>
+<!--
+<div class='league'>
+<div class="date_p">
+<p class="date"> </p>
+</div>
+<div class="teams">
+<p class="teams_p">West Ham - Newcastle</p>
+<p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+<div class='odds_div'>
+<p class="odds">2.99 3.98  2.01 28% 30% 43%</p>
+</div>
+<div class='tips'>
+<p class="tips_par"> Tips X2</p>
+</div>
+<div class="hidden_div">
+<p class="hidden_par">This is the first meeting Between these guys this year.
+This promises to be a spectacular match</p>
+
+</div>
+
+<hr>
+</div>
+</div>
+<div class='league'>
+<div class="date_p">
+
+</div>
+
+<div class="teams">
+<p class="teams_p">Wolves - Aston Villa</p>
+<p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+<div class='odds_div'>
+<p class="odds">2.99 3.98  2.21 28% 30% 43%</p>
+</div>
+<div class='tips'>
+<p class="tips_par"> Tips X2</p>
+</div>
+<div class="hidden_div">
+<p class="hidden_par">This is the first meeting Between these guys this year.
+This promises to be a spectacular match</p>
+
+</div>
+
+<hr>
+</div>
+</div>-->
+</div>
+<div class="container_2">
+<h2 class="container_2_header">These are the latest results</h2>
+<p>Updated every hour</p>
+<div class="scores_div">
+<h4>Argentina Primera A</h4>
+<p>Newell Old Boys 3 - 1 Independiente<p>
+<p>Boca Juniors 1 - 1 De Sante<p>
+<h4>Spanish La Liga</h4>
+<p>Real Sociedad 0 - 1 Atletico Madrid<p>
+<p>Almeria 2 - 0 Gijon</p>
+</div>
+<p class="container_2_par">  </p>
+
+</div>
+
+<div class="container_3">
+
+<p></p>
+<h2>Latest Standings</h2>
+<table class="standings">
+
+
+<tr>
+<td id="serial_number"></td>
+<td id="demo"></td>
+<td id="demo_played"></td>
+<td id="demo_won"></td>
+<td id="demo_drawn"></td>
+<td id="demo_lost"></td>
+<td id="demo_goals_for"></td>
+<td id="demo_goals_against"></td>
+<td id="demo_goals_difference"></td>
+<td id="demo_goals_points"></td>
+
+
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+<p>Copyright punters-league.com</p>
+</div>
+<script src="js/date1.js"></script>
+<script src="{% static "js/tables/premiership-table.js"%}"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

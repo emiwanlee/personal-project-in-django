@@ -1,0 +1,559 @@
+<!Doctype html>
+{% load static %}
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b274edf26f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{%  static "bootstrap/css/bootstrap.rtl.min.css" %}">
+    <script src="https://kit.fontawesome.com/b274edf26f.js" crossorigin="anonymous"></script>
+	
+</head>
+<title>Punters- League Home </title>
+</head>
+<body>
+<!--The Navbar Starts here-->
+<div class="nav">
+<ul class="nav_ul">
+<li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a> </li>
+<li><i class="fa-solid fa-blog"></i>Blog </li>
+<li>Results
+<div class="dropdown_content"> 
+<ul>
+<li class="active"><a>England</a></li>
+<li><a href="#">Spain</a></li>
+<li><a href="#">Germany</a> </li>
+<li><a href="#">Italy</a></li>
+<li><a href="#">France</a></li>
+<li><a href="#">Belgium</a></li>
+<li><a href="#">Netherlands</a></li>
+<li><a href="#">Portugal</a></li>
+<li><a href="#">Scotland</a></li>
+<li><a href="#">Greece</a></li>
+<li><a href="#">Argentina</a></li>
+<li><a href="#">Brazil</a></li>
+<li><a href="#">Australia</a></li>
+</ul>
+</div>
+</li>
+<li>England
+<div class="dropdown_content">
+<ul>
+<li><a href="premiership.html">Premiership</a></li>
+<li><a href="championship.html">Championship</a></li>
+<li><a href="league_one.html">League One</a> </li>
+<li><a href="english_league_two.html">League Two</a></li>
+</ul>
+</div>
+
+</li>
+<li>Spain
+<div class="dropdown_content">
+<ul>
+<li><a href="la_liga.html">La Liga1</a></li>
+<li><a href="la_liga_2.html">La liga2</a></li>
+</ul>
+</div> 
+</li>
+<li>Italy
+<div class="dropdown_content">
+<ul>
+<li><a href="Italian_serie_a.html">Serie A</a></li>
+<li><a href="Italian_serie_b.html">Serie B</a></li>
+</ul>
+</div>
+ </li>
+<li>Germany 
+<div class="dropdown_content">
+<ul>
+<li><a href="german_bundesliga.html">Bundesliga 1</a></li>
+<li><a href="german_bundesliga_2.html">Bundesliga 2</a></li>
+</ul>
+</div>
+</li>
+<li>France
+<div class="dropdown_content">
+<ul>
+<li><a href="french_ligue_1.html">Ligue 1</a></li>
+<li><a href="french_ligue_2.html">Ligue 2</a></li>
+
+</ul>
+</div>
+ </li>
+<li>Belgium
+<div class="dropdown_content">
+<ul>
+<li><a href="belgian_pro_league.html">Pro League</a></li>
+<li><a href="belgian_tweede_afdeling.html">Tweede Afdeling</a></li>
+</ul>
+</div>
+ </li>
+<li>Netherlands 
+<div class="dropdown_content">
+<ul>
+<li><a href="netherlands_eredevisie.html">Eredevisie</a></li>
+<li><a href="netherlands_erste_divisie.html">Erste Divisie</a></li>
+</ul>
+</div>
+</li>
+<li>Portugal
+<div class="dropdown_content">
+<ul>
+<li><a href="portuguese_premeira_liga.html">Premeira Liga</a></li>
+<li><a href="liga_portugal_2.html">Liga Portugal 2</a></li>
+</ul>
+</div>
+<li>Scotland
+<div class="dropdown_content">
+<ul>
+<li><a href="scottish_premier-league.html">Premiership</a></li>
+<li><a href="scottish_championship.html">Championship</a></li>
+</ul>
+</div>
+<li>Greece
+<div class="dropdown_content">
+<ul>
+<li><a href="greek_super_league.html">Super League</a></li>
+<li><a href="greek_super_league_2a.html">Super League 2A</a></li>
+<li><a href="greek_super_league_2b.html">Super league 2B</a> </li>
+</ul>
+</div>
+<li>Argentina
+<div class="dropdown_content">
+<ul>
+<li><a href="argentina_premera_division.html">Primera Division</a></li>
+<li><a href="argentina_premera_nacional.html">Primera Nacional</a></li>
+</ul>
+</div>
+<li>Brazil
+<div class="dropdown_content">
+<ul>
+<li><a href="brazil_serie_a.html">Serie A</a></li>
+<li><a href="brazil_serie_b.html">Serie B</a></li>
+</ul>
+</div>
+<li>Australia
+<div class="dropdown_content">
+<ul>
+<li><a href="queensland_premier_league.html">Queensland Premier League</a></li>
+<li><a href="npl_victoria.html">NPL Victoria</a></li>
+<li><a href="nsw.html">NSW</a></li>
+
+</ul>
+</div>
+</li>
+
+
+</ul>
+
+<div class="container-fluid">
+    <li id="demo1"></li>
+    </div>
+    </div>
+    
+    <div class="container">
+    
+    
+    
+    
+    <div class='league container-sm'>
+    <div class="date_p">
+    <p class="date">Friday 18<sup>th</sup>October 2024</p>
+    </div>
+    
+    <div class="teams">
+    <p class="teams_p">Dortmund 1 - 0 St. Pauli</p>
+    <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+    <div class='odds_div'>
+    <p class="odds">2.68 3.18  3.85 28% 30% 43%</p>
+    </div>
+    <div class='tips'>
+    <p class="tips_par"> Tips 1</p>
+    </div>
+    <div class="hidden_div">
+    <span class="hidden_par" id ="dor-wr"></span>
+    <span class="hidden_par" id ="dor-dr"></span>
+    <span class="hidden_par" id ="dor-lr"></span> 
+    <span>-</span>
+    
+    <span class="hidden_par" id ="stp-wr"></span>
+    <span class="hidden_par" id ="stp-dr"></span>
+    <span class="hidden_par" id ="stp-lr"></span>
+    
+    </div>
+    
+    <hr>
+    </div>
+    </div>
+    
+    <div class='league container-sm'>
+    <div class="date_p">
+    <p class="date">Saturday 19<sup>th</sup>October 2024</p>
+    </div>
+    <div class="teams">
+    <p class="teams_p">Hoffenheim - Bochum</p>
+    <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+    <div class='odds_div'>
+    <p class="odds">2.24 3.98  2.91 28% 30% 43%</p>
+    </div>
+    <div class='tips'>
+    <p class="tips_par"> Tips --</p>
+    </div>
+    <div class="hidden_div">
+        <span class="hidden_par" id ="hof-wr"></span>
+        <span class="hidden_par" id ="hof-dr"></span>
+        <span class="hidden_par" id ="hof-lr"></span> 
+        <span>-</span>
+        
+        <span class="hidden_par" id ="boc-wr"></span>
+        <span class="hidden_par" id ="boc-dr"></span>
+        <span class="hidden_par" id ="boc-lr"></span>
+    
+    </div>
+    
+    <hr>
+    </div>
+    </div>
+    <div class='league container-sm'>
+    <div class="date_p">
+    
+    </div>
+    <div class="teams">
+    <p class="teams_p">Freiburg - Augsburg</p>
+    <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+    <div class='odds_div'>
+    <p class="odds">3.45 3.98  2.25 28% 30% 43%</p>
+    </div>
+    <div class='tips'>
+    <p class="tips_par"> Tips --</p>
+    </div>
+    <div class="hidden_div">
+        <span class="hidden_par" id ="fri-wr"></span>
+        <span class="hidden_par" id ="fri-dr"></span>
+        <span class="hidden_par" id ="fri-lr"></span> 
+        <span>-</span>
+        
+        <span class="hidden_par" id ="aug-wr"></span>
+        <span class="hidden_par" id ="aug-dr"></span>
+        <span class="hidden_par" id ="aug-lr"></span>
+    </div>
+    
+    <hr>
+    </div>
+    </div>
+    </div>
+    
+    
+    <div class="container">
+    
+    
+    
+    
+    <div class='league container-sm'>
+    <div class="date_p">
+    <p class="date"></p>
+    </div>
+    
+    <div class="teams">
+    <p class="teams_p">Leverkusen - Frankfurt</p>
+    <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+    <div class='odds_div'>
+    <p class="odds">2.61 3.12  2.63 28% 30% 43%</p>
+    </div>
+    <div class='tips'>
+    <p class="tips_par"> Tips 1</p>
+    </div>
+    <div class="hidden_div">
+        <span class="hidden_par" id ="lev-wr"></span>
+        <span class="hidden_par" id ="lev-dr"></span>
+        <span class="hidden_par" id ="lev-lr"></span> 
+        <span>-</span>
+        
+        <span class="hidden_par" id ="fra-wr"></span>
+        <span class="hidden_par" id ="fra-dr"></span>
+        <span class="hidden_par" id ="fra-lr"></span>
+    </div>
+    
+    <hr>
+    </div>
+    </div>
+    
+    <div class='league container-sm'>
+    <div class="date_p">
+    <p class="date"></p>
+    
+    <div class="teams">
+    <p class="teams_p">Monchengladbach - Heidenheim</p>
+    <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+    <div class='odds_div'>
+    <p class="odds">2.61 3.12  2.63 28% 30% 43%</p>
+    </div>
+    <div class='tips'>
+    <p class="tips_par"> Tips X</p>
+    </div>
+    <div class="hidden_div">
+        <span class="hidden_par" id ="moc-wr"></span>
+        <span class="hidden_par" id ="moc-dr"></span>
+        <span class="hidden_par" id ="moc-lr"></span> 
+        <span>-</span>
+        
+        <span class="hidden_par" id ="hei-wr"></span>
+        <span class="hidden_par" id ="hei-dr"></span>
+        <span class="hidden_par" id ="hei-lr"></span>
+    </div>
+      </div> 
+    
+    <hr>
+    </div>
+    </div>
+    
+    <div class='league container-sm'>
+        <div class="date_p">
+        <p class="date"></p>
+        
+        </div>
+        <div class="teams">
+        <p class="teams_p">Mainz - Leipzig</p>
+        <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+        <div class='odds_div'>
+        <p class="odds">2.09 3.78  3.99 28% 30% 43%</p>
+        </div>
+        <div class='tips'>
+        <p class="tips_par"> Tips X2</p>
+        </div>
+        <div class="hidden_div">
+            <span class="hidden_par" id ="mai-wr"></span>
+            <span class="hidden_par" id ="mai-dr"></span>
+            <span class="hidden_par" id ="mai-lr"></span> 
+            <span>-</span>
+            
+            <span class="hidden_par" id ="lei-wr"></span>
+            <span class="hidden_par" id ="lei-dr"></span>
+            <span class="hidden_par" id ="lei-lr"></span>
+        
+        </div>
+        
+        <hr>
+        </div>
+        </div>
+        </div>
+    
+        <div class="container">
+    
+    
+    
+    
+            <div class='league container-sm'>
+            <div class="date_p">
+            <p class="date"><p class="date"></p>
+            </div>
+            
+            <div class="teams">
+            <p class="teams_p">Bayern - Stuttgart</p>
+            <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+            <div class='odds_div'>
+            <p class="odds">2.61 3.12  2.63 28% 30% 43%</p>
+            </div>
+            <div class='tips'>
+            <p class="tips_par"> Tips --</p>
+            </div>
+            <div class="hidden_div">
+                <span class="hidden_par" id ="bay-wr"></span>
+                <span class="hidden_par" id ="bay-dr"></span>
+                <span class="hidden_par" id ="bay-lr"></span> 
+                <span>-</span>
+                
+                <span class="hidden_par" id ="stu-wr"></span>
+                <span class="hidden_par" id ="stu-dr"></span>
+                <span class="hidden_par" id ="stu-lr"></span>
+            </div>
+            
+            <hr>
+            </div>
+            </div>
+            
+            <div class='league container-sm'>
+            <div class="date_p">
+            <p class="date">Sunday 20<sup>th</sup> October 2024</p>
+            
+            </div>
+            <div class="teams">
+            <p class="teams_p">Holstein Kiel - Union Berlin</p>
+            <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+            <div class='odds_div'>
+            <p class="odds">2.09 3.78  3.99 28% 30% 43%</p>
+            </div>
+            <div class='tips'>
+            <p class="tips_par"> Tips --</p>
+            </div>
+            <div class="hidden_div">
+                <span class="hidden_par" id ="hol-wr"></span>
+                <span class="hidden_par" id ="hol-dr"></span>
+                <span class="hidden_par" id ="hol-lr"></span> 
+                <span>-</span>
+                
+                <span class="hidden_par" id ="uni-wr"></span>
+                <span class="hidden_par" id ="uni-dr"></span>
+                <span class="hidden_par" id ="uni-lr"></span>
+            
+            </div>
+            
+            <hr>
+            </div>
+            </div>
+            
+            <div class='league container-sm'>
+                <div class="date_p">
+                <p class="date"></p>
+                
+                </div>
+                <div class="teams">
+                <p class="teams_p">Wolfsburg - Werder</p>
+                <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+                <div class='odds_div'>
+                <p class="odds">2.09 3.78  3.99 28% 30% 43%</p>
+                </div>
+                <div class='tips'>
+                <p class="tips_par"> Tips X</p>
+                </div>
+                <div class="hidden_div">
+                    <span class="hidden_par" id ="wol-wr"></span>
+                    <span class="hidden_par" id ="wol-dr"></span>
+                    <span class="hidden_par" id ="wol-lr"></span> 
+                    <span>-</span>
+                    
+                    <span class="hidden_par" id ="wer-wr"></span>
+                    <span class="hidden_par" id ="wer-dr"></span>
+                    <span class="hidden_par" id ="wer-lr"></span>
+                
+                </div>
+                
+                <hr>
+                </div>
+                </div>
+                </div>
+    
+                <div class="container">
+    
+    
+    
+    
+                    <div class='league container-sm'>
+                    <div class="date_p">
+                    <p class="date">Sunday 3<sup>rd </sup>Mar. 2024</p>
+                    </div>
+                    
+                    <div class="teams">
+                    <p class="teams_p">Koln - Leverkusen</p>
+                    <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+                    <div class='odds_div'>
+                    <p class="odds">2.61 3.12  2.63 28% 30% 43%</p>
+                    </div>
+                    <div class='tips'>
+                    <p class="tips_par"> Tips 2</p>
+                    </div>
+                    <div class="hidden_div">
+                        <span class="hidden_par" id="kol-wr"></span>
+                        <span class="hidden_par" id ="kol-dr"></span>
+                        <span class="hidden_par" id ="kol-lr"></span> 
+                        <span>-</span>
+                        
+                        <span class="hidden_par" id ="lev-wr"></span>
+                        <span class="hidden_par" id ="lev-dr"></span>
+                        <span class="hidden_par" id ="lev-lr"></span>
+                    </div>
+                    
+                    <hr>
+                    </div>
+                    </div>
+                    
+                    <div class='league container-sm'>
+                    <div class="date_p">
+                    <p class="date"></p>
+                    
+                    </div>
+                    <div class="teams">
+                    <p class="teams_p">Hoffenheim - Werder</p>
+                    <p class="odds_name">Home Draw Away WLLDLD - LWWWDW</p>
+                    <div class='odds_div'>
+                    <p class="odds">2.09 3.78  3.99 28% 30% 43%</p>
+                    </div>
+                    <div class='tips'>
+                    <p class="tips_par"> Tips X</p>
+                    </div>
+                    <div class="hidden_div">
+                        <span class="hidden_par" id="hof-wr"></span>
+                        <span class="hidden_par" id ="hof-dr"></span>
+                        <span class="hidden_par" id ="hof-lr"></span> 
+                        <span>-</span>
+                        
+                        <span class="hidden_par" id ="wer-wr"></span>
+                        <span class="hidden_par" id ="wer-dr"></span>
+                        <span class="hidden_par" id ="wer-lr"></span>
+                    
+                    </div>
+                    
+                    <hr>
+                    </div>
+                    </div>
+                    </div>
+
+
+<div class="container_2">
+<h2 class="container_2_header">These are the latest results</h2>
+<p>Updated every hour</p>
+<div class="scores_div">
+
+<p>Koln 0 - 1 Werde<p>
+<p>Athletic Club 3 - 0 Cadiz<p>
+<p>Valencia 3 - 0 Atletico Madrid<p>
+<p>Celta Vigo 0 - 1 Mallorca</p>
+<p> Barcelona 5 - 0 Real Betis</p>
+<p>Getafe 3 - 2 Osasuna</p>
+<p>Villrreal 2 - 1 Almeria</p>
+<p> Sevilla 1 - 0 Las Palmas</p>
+<p>Real Madrid 2 - 1 Real Sociedad</p>
+</div>
+<p class="container_2_par">  </p>
+
+</div>
+
+<div class="container_3">
+
+<p></p>
+<h2>Latest Standings</h2>
+<table class="standings">
+
+
+<tr>
+<td id="serial_number"></td>
+<td id="demo"></td>
+<td id="demo_played"></td>
+<td id="demo_won"></td>
+<td id="demo_drawn"></td>
+<td id="demo_lost"></td>
+<td id="demo_goals_for"></td>
+<td id="demo_goals_against"></td>
+<td id="demo_goals_difference"></td>
+<td id="demo_goals_points"></td>
+
+
+
+</tr>
+
+
+</table>
+</div>
+
+
+
+<div class="footer">
+<p>Copyright punters-league.com</p>
+</div>
+<script src="{% static "js/date1.js"%}"></script>
+<script src="{% static "js/tables/german-bundesliga.js" %}"></script>
+</body>
+
+</html>
